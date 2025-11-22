@@ -4,9 +4,53 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		form{
+			display: flex;
+			flex-direction: column;
+			gap:5px;
+		}
+	</style>
 </head>
 
 <body>
+	<form method="post">
+		<label for="name">Name</label>
+		<input name="name" id="name" type="text" placeholder="Name" required />
+		
+		<label for="email">Email</label>
+		<input name="email" id="email" type="email" placeholder="Email" required />
+		<label for="gender_m">Gender</label>
+		<div>
+			<label for="gender_m">Male</label>
+			<input name="gender" id="gender_m" type="radio" required />
+			
+			<label for="gender_f">Female</label>
+			<input name="gender" id="gender_f" type="radio" required />
+		</div>
+		
+		<label for="cars">Car Brands</label>
+		<select id="cars" name="cars">
+			<option value="">--Please choose an option--</option>
+			<option value="tata">Tata</option>
+		</select>
+		
+		<label for="age">Age</label>
+		<input name="age" id="age" type="number" placeholder="Age" required />
+	
+		<label for="dob">DOB</label>
+		<input name="dob" id="dob" type="date"  required />
+		
+		<label for="tel">Phone Number</label>
+		<input name="tel" id="tel" type="tel" placeholder="xxx-xxx-xxxx" />
+	
+		<label for="password">Password</label>
+		<input name="password" id="password" type="password" placeholder="Password" required />
+		<div>
+			<input name="tos" id="tos" type="checkbox" required />
+			<label for="tos">I agree to the TOS</label>
+		</div>
+	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
